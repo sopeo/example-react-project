@@ -1,0 +1,130 @@
+:root {
+  /* 上揃え & 左揃え */
+  @define-mixin --layout-start-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  /* 上揃え & 左右中央 */
+  @define-mixin --layout-start-center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  /* 上揃え & 左右スペースを空けて目一杯に広げる */
+  @define-mixin --layout-start-between {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  /* 上揃え & 右揃え */
+  @define-mixin --layout-start-end {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  /* 天地中央 & 左揃え */
+  @define-mixin --layout-center-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  /* 天地中央 & 左右中央 */
+  @define-mixin --layout-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* 天地中央 & 左右スペースを空けて目一杯に広げる */
+  @define-mixin --layout-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* 天地中央 & 左右スペースを空けて目一杯に広げる */
+  @define-mixin --layout-center-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* 天地中央 & 右揃え */
+  @define-mixin --layout-center-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  /* 天地いっぱいまで広げる & 左揃え */
+  @define-mixin --layout-stretch-start {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  /* 天地いっぱいまで広げる & 左右中央 */
+  @define-mixin --layout-stretch-center {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+  /* 天地いっぱいまで広げる & 左右スペースを空けて目一杯に広げる */
+  @define-mixin --layout-stretch-between {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  /* 天地いっぱいまで広げる & 右揃え */
+  @define-mixin --layout-stretch-end {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+  }
+  /* 下揃え & 左揃え */
+  @define-mixin --layout-end-start {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  /* 下揃え & 左右中央 */
+  @define-mixin --layout-end-center {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  /* 下揃え & 左右スペースを空けて目一杯に広げる */
+  @define-mixin --layout-end-between {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  /* 下揃え & 右揃え */
+  @define-mixin --layout-end-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  /*
+  縦方向
+  天地中央 & 左揃え
+  */
+  @define-mixin --layout-column-center-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  /* 縦方向
+  天地中央 & 左右中央 */
+  @define-mixin --layout-column-center-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* 縦方向
+  天地中央 & 左右いっぱいまで広がる */
+  @define-mixin --layout-column-center-stretch {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+}

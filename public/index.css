@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  /* 上揃え & 左揃え */
+  /* 上揃え & 左右中央 */
+  /* 上揃え & 左右スペースを空けて目一杯に広げる */
+  /* 上揃え & 右揃え */
+  /* 天地中央 & 左揃え */
+  /* 天地中央 & 左右中央 */
+  /* 天地中央 & 左右スペースを空けて目一杯に広げる */
+  /* 天地中央 & 左右スペースを空けて目一杯に広げる */
+  /* 天地中央 & 右揃え */
+  /* 天地いっぱいまで広げる & 左揃え */
+  /* 天地いっぱいまで広げる & 左右中央 */
+  /* 天地いっぱいまで広げる & 左右スペースを空けて目一杯に広げる */
+  /* 天地いっぱいまで広げる & 右揃え */
+  /* 下揃え & 左揃え */
+  /* 下揃え & 左右中央 */
+  /* 下揃え & 左右スペースを空けて目一杯に広げる */
+  /* 下揃え & 右揃え */
+  /*
+  縦方向
+  天地中央 & 左揃え
+  */
+  /* 縦方向
+  天地中央 & 左右中央 */
+  /* 縦方向
+  天地中央 & 左右いっぱいまで広がる */
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background: #000;
+}
+
+.App {
+  background: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+
+.App-logo {
+    height: 80px;
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+
+.App-header {
+    height: 150px;
+    padding: 20px;
+    color: white;
+    background-color: #222;
+  }
+
+.App-title {
+    font-size: 1.5em;
+  }
+
+.App-intro {
+    font-size: large;
+  }
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
