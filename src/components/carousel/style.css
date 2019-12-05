@@ -1,0 +1,72 @@
+.Carousel {
+  &__Container {
+    position: relative;
+    height: auto;
+  }
+  &__items {
+    position: relative;
+    overflow: hidden;
+  }
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @mixin --layout-center-center;
+    font-size: 3rem;
+    font-weight: bold;
+    background: #fff;
+    transition: all 0.5s ease;
+    user-select: none;
+    cursor: pointer;
+  }
+  &__Arrow {
+    position: absolute;
+    top: 0;
+    background: #000;
+    width: 50px;
+    height: 100%;
+    @mixin --layout-center-center;
+    cursor: pointer;
+    &--prev {
+      left: 0;
+      &::after {
+        content: "";
+        margin: 0 0 0 10px;
+        width: 20px;
+        height: 20px;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: rotate(135deg);
+      }
+    }
+    &--next {
+      right: 0;
+      &::after {
+        content: "";
+        margin: 0 10px 0 0;
+        width: 20px;
+        height: 20px;
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &__Buttons {
+    position: absolute;
+    @mixin --layout-center-center;
+    width: 100%;
+    bottom: -30px;
+  }
+  &__Button {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 8px;
+    background: #ccc;
+    cursor: pointer;
+    &--selected {
+      background: #000;
+    }
+  }
+}

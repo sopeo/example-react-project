@@ -52,6 +52,7 @@
     "postcss-nested": "^4.2.1",
     "postcss-simple-vars": "^5.0.2",
     "postcss-sorting": "^5.0.1",
+    "prop-types": "^15.7.2",
     "stylefmt": "^6.0.3",
     "stylelint": "^12.0.0",
     "stylelint-suitcss": "^3.0.0"
